@@ -221,13 +221,13 @@
     </section>
 
     <!-- Contact section and footer remain the same -->
-    <section id="contact">
+<section id="contact">
         <div class="container">
             <h2 class="section-title">Get in Touch</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" rows="5" required></textarea>
+            <form class="contact-form" action="https://formspree.io/f/mannknln" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="_replyto" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" rows="5" required></textarea>
                 <button type="submit" class="btn">Send Message</button>
             </form>
         </div>
