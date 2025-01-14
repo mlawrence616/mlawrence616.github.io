@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matthew Lawrence - Portfolio</title>
     <style>
-        /* Modern, clean styling */
+        /* Keep existing CSS variables and styles */
         :root {
             --primary-color: #2d3436;
             --secondary-color: #636e72;
@@ -13,6 +13,7 @@
             --background-color: #ffffff;
         }
 
+        /* Previous styles remain the same until portfolio-item */
         * {
             margin: 0;
             padding: 0;
@@ -85,11 +86,25 @@
             margin-top: 40px;
         }
 
+        /* Updated portfolio-item styles */
         .portfolio-item {
             background: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .portfolio-item a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
 
         .portfolio-item h3 {
@@ -97,6 +112,7 @@
             color: var(--accent-color);
         }
 
+        /* Rest of your existing styles */
         .about-content {
             max-width: 800px;
             margin: 0 auto;
@@ -150,6 +166,7 @@
     </style>
 </head>
 <body>
+    <!-- Header and nav remain the same -->
     <header>
         <div class="container">
             <h1>Matthew Lawrence</h1>
@@ -172,21 +189,28 @@
             <h2 class="section-title">My Work</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <h3>Project Title 1</h3>
-                    <p>Brief description of the project, including the client, your role, and the impact of your work.</p>
+                    <a href="project1.html">
+                        <h3>Project Title 1</h3>
+                        <p>Brief description of the project, including the client, your role, and the impact of your work.</p>
+                    </a>
                 </div>
                 <div class="portfolio-item">
-                    <h3>Project Title 2</h3>
-                    <p>Brief description of the project, including the client, your role, and the impact of your work.</p>
+                    <a href="project2.html">
+                        <h3>Project Title 2</h3>
+                        <p>Brief description of the project, including the client, your role, and the impact of your work.</p>
+                    </a>
                 </div>
                 <div class="portfolio-item">
-                    <h3>Project Title 3</h3>
-                    <p>Brief description of the project, including the client, your role, and the impact of your work.</p>
+                    <a href="project3.html">
+                        <h3>Project Title 3</h3>
+                        <p>Brief description of the project, including the client, your role, and the impact of your work.</p>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- About section remains the same -->
     <section id="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
@@ -196,6 +220,7 @@
         </div>
     </section>
 
+    <!-- Contact section and footer remain the same -->
     <section id="contact">
         <div class="container">
             <h2 class="section-title">Get in Touch</h2>
