@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title - Matthew Lawrence Portfolio</title>
+    <style>
+        /* Use the same CSS variables for consistency */
+        :root {
+            --primary-color: #2d3436;
+            --secondary-color: #636e72;
+            --accent-color: #0984e3;
+            --background-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--primary-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav {
+            background-color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .project-header {
+            padding: 60px 0;
+            text-align: center;
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .project-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .project-content {
+            padding: 60px 0;
+        }
+
+        .project-content h2 {
+            color: var(--accent-color);
+            margin: 40px 0 20px;
+        }
+
+        .project-content p {
+            margin-bottom: 20px;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 40px;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="project-header">
+        <div class="container">
+            <h1>Project Title</h1>
+            <p>Project Category / Client Name</p>
+        </div>
+    </header>
+
+    <main class="project-content">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <p>Detailed description of the project, including the challenge, your approach, and the results.</p>
+
+            <h2>The Challenge</h2>
+            <p>Explain what problems or needs the client had and what they were trying to achieve.</p>
+
+            <h2>The Solution</h2>
+            <p>Describe your approach, the key messages you developed, and how you addressed the client's needs.</p>
+
+            <h2>Results</h2>
+            <p>Share the impact of your work, including any metrics, feedback, or results achieved.</p>
+
+            <a href="index.html#portfolio" class="back-button">Back to Portfolio</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Matthew Lawrence. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
